@@ -1,0 +1,136 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Cloud Firestore Plugin",
+  "text": {
+    "plugins": {
+      "emi_indo_cloudfirestore": {
+        "name": "Cloud Firestore",
+        "description": "Add addon descirption here",
+        "help-url": "https://github.com/EMI-INDO/c3addon-bug/issues",
+        "properties": {},
+        "aceCategories": {
+          "cloud-firestore": "cloud firestore",
+          "data-collection": "data collection",
+          "error": "error",
+          "debug": "debug"
+        },
+        "conditions": {
+          "on-get-data": {
+            "list-name": "On Get Data",
+            "display-text": "On Get Data",
+            "description": "On Get Data"
+          },
+          "on-add-data": {
+            "list-name": "On add data",
+            "display-text": "On add data",
+            "description": "On add data"
+          },
+          "on-error": {
+            "list-name": "On error",
+            "display-text": "On error",
+            "description": "On any Error "
+          },
+          "on-read-data": {
+            "list-name": "On read data",
+            "display-text": "On read data",
+            "description": "On read data"
+          },
+          "on-update-data": {
+            "list-name": "On update data",
+            "display-text": "On update data",
+            "description": "On update data"
+          },
+          "on-delete-data": {
+            "list-name": "On delete data",
+            "display-text": "On delete data",
+            "description": "On delete data"
+          }
+        },
+        "actions": {
+          "add-data": {
+            "list-name": "Add data",
+            "display-text": "Add data, (path: [b]{0}[/b], userId: [b]{1}[/b], json: [b]{2}[/b])",
+            "description": "Add data to Cloud Firestore",
+            "params": {
+              "path": {
+                "name": "Path Name :",
+                "desc": "An immutable path of field names, used to identify parts of a document."
+              },
+              "id": {
+                "name": "user ID :",
+                "desc": "userid: recommendation Authentication userid"
+              },
+              "json": {
+                "name": "JSON String :",
+                "desc": "Cloud Firestore lets you write a variety of data types inside a document, including strings, booleans, numbers, dates, null, and nested arrays and objects."
+              }
+            }
+          },
+          "read-data": {
+            "list-name": "Read Data",
+            "display-text": "Read Data, (path: [b]{0}[/b], userId: [b]{1}[/b])",
+            "description": "Get data with Cloud Firestore",
+            "params": {
+              "path": {
+                "name": "Path Name :",
+                "desc": "An immutable path of field names, used to identify parts of a document."
+              },
+              "id": {
+                "name": "user ID :",
+                "desc": "userid: recommendation Authentication userid"
+              }
+            }
+          },
+          "update-data": {
+            "list-name": "Update data",
+            "display-text": "Update data, (path: [b]{0}[/b], userId: [b]{1}[/b], json: [b]{2}[/b])",
+            "description": "To update some fields of a document without overwriting the entire document",
+            "params": {
+              "path": {
+                "name": "Path Name :",
+                "desc": "An immutable path of field names, used to identify parts of a document."
+              },
+              "id": {
+                "name": "user ID :",
+                "desc": "userid: recommendation Authentication userid"
+              },
+              "json": {
+                "name": "JSON String :",
+                "desc": "Cloud Firestore lets you write a variety of data types inside a document, including strings, booleans, numbers, dates, null, and nested arrays and objects."
+              }
+            }
+          },
+          "delete-data": {
+            "list-name": "Delete data",
+            "display-text": "Delete data, (path: [b]{0}[/b], userId: [b]{1}[/b])",
+            "description": "Delete data from Cloud Firestore",
+            "params": {
+              "path": {
+                "name": "Path Name :",
+                "desc": "An immutable path of field names, used to identify parts of a document."
+              },
+              "id": {
+                "name": "user ID :",
+                "desc": "userid: recommendation Authentication userid"
+              }
+            }
+          }
+        },
+        "expressions": {
+          "data": {
+            "translated-name": "Data",
+            "description": "get data result JSON string"
+          },
+          "error-msg": {
+            "translated-name": "Error msg",
+            "description": "get error result"
+          },
+          "event-response": {
+            "translated-name": "Event response",
+            "description": "result string"
+          }
+        }
+      }
+    }
+  }
+}

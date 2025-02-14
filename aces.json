@@ -1,0 +1,150 @@
+{
+  "cloud-firestore": {
+    "conditions": [
+      {
+        "id": "on-get-data",
+        "scriptName": "OnGetData",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-add-data",
+        "scriptName": "OnAddData",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-error",
+        "scriptName": "OnError",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-read-data",
+        "scriptName": "OnReadData",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-update-data",
+        "scriptName": "OnUpdateData",
+        "highlight": false,
+        "isTrigger": true
+      },
+      {
+        "id": "on-delete-data",
+        "scriptName": "OnDeleteData",
+        "highlight": false,
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "add-data",
+        "scriptName": "AddData",
+        "highlight": true,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "path",
+            "type": "string"
+          },
+          {
+            "id": "id",
+            "type": "string"
+          },
+          {
+            "id": "json",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "read-data",
+        "scriptName": "ReadData",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "path",
+            "type": "string"
+          },
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "update-data",
+        "scriptName": "UpdateData",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "path",
+            "type": "string"
+          },
+          {
+            "id": "id",
+            "type": "string"
+          },
+          {
+            "id": "json",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "delete-data",
+        "scriptName": "DeleteData",
+        "highlight": false,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "path",
+            "type": "string"
+          },
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "data-collection": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "data",
+        "expressionName": "Data",
+        "returnType": "any"
+      }
+    ]
+  },
+  "error": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "error-msg",
+        "expressionName": "ErrorMsg",
+        "returnType": "any"
+      }
+    ]
+  },
+  "debug": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "event-response",
+        "expressionName": "EventResponse",
+        "returnType": "any"
+      }
+    ]
+  }
+}
